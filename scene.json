@@ -1,0 +1,19 @@
+{
+  "ecs7": true,
+  "runtimeVersion": "7",
+  "main": "bin/game.js",
+  "display": {
+    "title": "Sync filter leak repro",
+    "description": "Client-local VisibilityComponent on server-owned mirrors leaks to the server via the sync filter first-write rule"
+  },
+  "scene": {
+    "base": "60,60",
+    "parcels": ["60,60"]
+  },
+  "spawnPoints": [{ "name": "spawn", "default": true, "position": { "x": 8, "y": 0, "z": 2 } }],
+  "requiredPermissions": [],
+  "authoritativeMultiplayer": true,
+  "worldConfiguration": {
+    "name": "robtfm.dcl.eth"
+  }
+}
